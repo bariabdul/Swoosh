@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280EFB7E2009B60A007B455B /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280EFB7D2009B60A007B455B /* LeagueVC.swift */; };
+		280EFB802009B61F007B455B /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280EFB7F2009B61F007B455B /* SkillVC.swift */; };
 		287BCABD200859B100BD6234 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287BCABC200859B100BD6234 /* AppDelegate.swift */; };
-		287BCABF200859B100BD6234 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287BCABE200859B100BD6234 /* ViewController.swift */; };
+		287BCABF200859B100BD6234 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287BCABE200859B100BD6234 /* WelcomeVC.swift */; };
 		287BCAC2200859B100BD6234 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 287BCAC0200859B100BD6234 /* Main.storyboard */; };
 		287BCAC4200859B100BD6234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 287BCAC3200859B100BD6234 /* Assets.xcassets */; };
 		287BCAC7200859B100BD6234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 287BCAC5200859B100BD6234 /* LaunchScreen.storyboard */; };
@@ -16,9 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		280EFB7D2009B60A007B455B /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
+		280EFB7F2009B61F007B455B /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
 		287BCAB9200859B100BD6234 /* Swoosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swoosh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		287BCABC200859B100BD6234 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		287BCABE200859B100BD6234 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		287BCABE200859B100BD6234 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		287BCAC1200859B100BD6234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		287BCAC3200859B100BD6234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		287BCAC6200859B100BD6234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		280EFB7B2009B501007B455B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				287BCABE200859B100BD6234 /* WelcomeVC.swift */,
+				280EFB7D2009B60A007B455B /* LeagueVC.swift */,
+				280EFB7F2009B61F007B455B /* SkillVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		280EFB7C2009B509007B455B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		287BCAB0200859B100BD6234 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +77,10 @@
 		287BCABB200859B100BD6234 /* Swoosh */ = {
 			isa = PBXGroup;
 			children = (
-				287BCACE200860ED00BD6234 /* Views */,
+				280EFB7C2009B509007B455B /* Model */,
+				280EFB7B2009B501007B455B /* Controller */,
+				287BCACE200860ED00BD6234 /* View */,
 				287BCABC200859B100BD6234 /* AppDelegate.swift */,
-				287BCABE200859B100BD6234 /* ViewController.swift */,
 				287BCAC0200859B100BD6234 /* Main.storyboard */,
 				287BCAC3200859B100BD6234 /* Assets.xcassets */,
 				287BCAC5200859B100BD6234 /* LaunchScreen.storyboard */,
@@ -67,12 +89,12 @@
 			path = Swoosh;
 			sourceTree = "<group>";
 		};
-		287BCACE200860ED00BD6234 /* Views */ = {
+		287BCACE200860ED00BD6234 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				287BCACF2008613E00BD6234 /* BorderButton.swift */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				287BCABF200859B100BD6234 /* ViewController.swift in Sources */,
+				287BCABF200859B100BD6234 /* WelcomeVC.swift in Sources */,
+				280EFB7E2009B60A007B455B /* LeagueVC.swift in Sources */,
 				287BCABD200859B100BD6234 /* AppDelegate.swift in Sources */,
+				280EFB802009B61F007B455B /* SkillVC.swift in Sources */,
 				287BCAD02008613E00BD6234 /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
